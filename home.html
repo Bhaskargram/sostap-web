@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SOSTAP</title>
+    <!-- Meta Tags -->
+    <meta name="description" content="Sostap by Finixia Dedecons Pvt. Ltd. - Efficient Solutions for Modern Needs.">
+    <meta name="keywords" content="Sostap, Finixia Dedecons, efficiency, modern solutions, software">
+    <meta name="author" content="Finixia Dedecons Pvt. Ltd.">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="Sostap - Finixia Dedecons Pvt. Ltd.">
+    <meta property="og:description" content="Discover efficient solutions with Sostap, brought to you by Finixia Dedecons Pvt. Ltd.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://sostap.finixia.in">
+    <meta property="og:image" content="https://i.postimg.cc/3JCzksh6/SOS-TAP-web.png"> <!-- Replace with your image URL -->
+    <meta property="og:site_name" content="Sostap">
+    <meta property="og:locale" content="en_US">
+
+    <!-- Twitter Card Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Sostap - Finixia Dedecons Pvt. Ltd.">
+    <meta name="twitter:description" content="Efficient solutions for the modern era, by Finixia Dedecons Pvt. Ltd.">
+    <meta name="twitter:image" content="https://i.postimg.cc/3JCzksh6/SOS-TAP-web.png"> <!-- Replace with your image URL -->
+    <meta name="twitter:site" content="@Sostap"> <!-- Replace with your Twitter handle -->
+
+    <!-- Favicon -->
+    <link rel="icon" href="https://sostap.finixia.in/favicon.ico" type="image/x-icon"> <!-- Replace with your favicon URL -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+            text-align: center;
+        }
+        .container {
+            padding: 50px;
+            background-color: #fff;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            margin: 20px;
+            border-radius: 8px;
+        }
+        h1 {
+            color: #007BFF;
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+        p {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+        .download-links a {
+            display: inline-block;
+            padding: 15px 30px;
+            margin: 10px;
+            font-size: 18px;
+            color: #fff;
+            background-color: #007BFF;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .header, .footer {
+            background-color: #007BFF;
+            color: white;
+            padding: 10px 0;
+        }
+
+        .header {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .header img, .footer img {
+            max-height: 60px;
+        }
+
+        .menu-bar {
+            display: flex;
+            justify-content: center;
+            padding: 10px;
+            background-color: #fff;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            flex-wrap: wrap;
+        }
+
+        .menu-bar a {
+            margin: 5px 15px;
+            color: #007BFF;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        .menu-bar a:hover {
+            color: #0056b3;
+            text-decoration: underline;
+        }
+
+        .hamburger-menu {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+            margin: 10px;
+        }
+
+        .hamburger-menu div {
+            width: 25px;
+            height: 3px;
+            background-color: #333;
+            margin: 4px 0;
+            transition: 0.4s;
+        }
+
+        .menu-bar-mobile {
+            display: none;
+            flex-direction: column;
+            align-items: center;
+            background-color: #fff;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            position: absolute;
+            top: 60px;
+            width: 100%;
+            z-index: 1000;
+        }
+
+        .menu-bar-mobile a {
+            padding: 10px;
+            width: 100%;
+            text-align: center;
+            border-top: 1px solid #ddd;
+        }
+
+        .content {
+            padding: 20px;
+        }
+
+        .footer {
+            margin-top: 50px;
+            padding: 20px 10px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .menu-bar {
+                display: none;
+            }
+
+            .hamburger-menu {
+                display: flex;
+            }
+
+            .menu-bar-mobile {
+                display: none;
+            }
+
+            .header img, .footer img {
+                max-height: 50px;
+            }
+
+            .content {
+                padding: 10px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .header img, .footer img {
+                max-height: 40px;
+            }
+
+            .content {
+                padding: 5px;
+            }
+
+            .menu-bar-mobile a {
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <div class="header">
+        <img src="https://i.postimg.cc/3JCzksh6/SOS-TAP-web.png" alt="Sostap Logo"> <!-- Replace with your header logo URL -->
+        <div class="hamburger-menu" onclick="toggleMenu()">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+
+     <!-- Desktop Menu Bar -->
+     <div class="menu-bar">
+        <a href="home.html">Home</a>
+        <a href="about-us.html">About Us</a>
+        <a href="privacypolicy.html">Privacy Policy</a>
+        <a href="terms&conditions.html">Terms & Conditions</a>
+        <a href="contact-us.html">Contact Us</a>
+        <a href="announcement.html">Special Announcement</a>
+        <a href="home.html">Download App</a> <!-- Replace with your app download link -->
+    </div>
+
+    <!-- Mobile Menu Bar -->
+    <div class="menu-bar-mobile" id="mobileMenu">
+        <a href="home.html">Home</a>
+        <a href="about-us.html">About Us</a>
+        <a href="privacypolicy.html">Privacy Policy</a>
+        <a href="terms&conditions.html">Terms & Conditions</a>
+        <a href="contact-us.html">Contact Us</a>
+        <a href="announcement.html">Special Announcement</a>
+        <a href="home.html">Download App</a> <!-- Replace with your app download link -->
+    </div>
+    <div class="container">
+        <h1>Welcome to Sostap</h1>
+        <p>Experience the convenience and efficiency of Sostap, your reliable app developed under Finixia Dedecons Private Limited.</p>
+        <p>Get started by downloading our app today. Get 24*7 Services</p>
+        <div class="download-links">
+            <a href="#">Download for Android</a>
+            <a href="#">Download for iOS</a>
+        </div>
+    </div>
+<!-- Footer -->
+<div class="footer">
+    <img src="https://i.postimg.cc/3JCzksh6/SOS-TAP-web.png" alt="Finixia Dedecons Logo"> <!-- Replace with your footer logo URL -->
+    <p>&copy; 2024 Finixia Dedecons Pvt. Ltd. All rights reserved.</p>
+</div>
+</body>
+</html>
+
+<script>
+function toggleMenu() {
+    const mobileMenu = document.getElementById("mobileMenu");
+    if (mobileMenu.style.display === "flex") {
+        mobileMenu.style.display = "none";
+    } else {
+        mobileMenu.style.display = "flex";
+    }
+}
+</script>
